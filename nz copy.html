@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,23 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
-<script>
-
-
-function validate(){
-    var sun= document.getElementById("name1").value;
-    var moon= document.getElementById("mail1").value;
-    var night= document.getElementById("msg1").value;
-   
-    if(sun.length<1 || moon.length<1){
-        document.getElementById("outcome").alert("This is an alert");
-        return false;
-    }
-    return true;
-}
-
-</script>
 <style>
 
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
@@ -102,7 +88,7 @@ padding:35px;
 .orange1{
     color:orangered;
     font-size:30px;
-    line-height: 2px;
+    margin-bottom:0;
 }
 .insane{
     font-size: 45px;
@@ -130,7 +116,7 @@ padding:35px;
     font-size:30px;
 }
 
-.corona{
+#corona{
    margin-top:100px;
    margin-left:0px;
    margin-right:0px;
@@ -179,8 +165,7 @@ padding:35px;
 }
 .maruti{
    color: #6bb99c;
-   font-size:2vmax;
-   line-height:0px;
+   margin-bottom: 0px;
 }
 .west{
 font-size:4vmax;
@@ -192,7 +177,7 @@ line-height: 75px;
     font-size:35px;
     padding-top: 20px;
 }
-.toy{
+#toy{
     background-size: 100% 100%;
     height:808px;
     background-image: url('/Users/atharvakulkarni/Desktop/untitled folder 10/porsche.png' ) ;
@@ -600,7 +585,7 @@ nav{
         font-size:22px;
     }
     
-    .corona{
+    #corona{
         height:550px;
     }
     .rounded-input2{
@@ -924,7 +909,7 @@ width:50%;
 
 
 @media (max-width: 1536px) {
-    .corona{
+    #corona{
     height:800px;
 }
 }
@@ -932,14 +917,14 @@ width:50%;
 @media (max-width: 1440px) {
 .case{
     height:750px;
-}.corona{
+}#corona{
     height:880px;
 }
 }
 @media (max-width: 1366px) {
 .case{
     height:709px;
-}.corona{
+}#corona{
     height:800px;
 }
 }.maruti{
@@ -947,11 +932,11 @@ font-size: 32px;
 }
 .west{
     font-size: 70px;
-    line-height: 120px;
+    line-height: 80px;
 }
 
 .ball50{
-    padding:20px 30px;
+    padding:12px 30px;
 font-size:x-large;
 }
 
@@ -959,7 +944,7 @@ font-size:x-large;
 @media (max-width: 1280px) {
 .case{
     height:661px;
-}.corona{
+}#corona{
     height:780px;
 }.maruti{
 font-size: 32px;
@@ -980,7 +965,7 @@ font-size:x-large;
 @media (max-width: 1024px) {
 .case{
     height:559px;
-}.corona{
+}#corona{
     height:627px;
 }
 .maruti{
@@ -1004,7 +989,7 @@ font-size:larger;
 .case{
     height:447px;
 }
-.corona{
+#corona{
     height:475px;
 }
 
@@ -1025,7 +1010,7 @@ font-size: large;
 .case{
     height:354px;
 }
-.corona{
+#corona{
     height:355px;
 }
 .maruti{
@@ -1050,7 +1035,7 @@ font-size: medium;
 .case{
     height:310px;
 }
-.corona{
+#corona{
     height:336px;
 }.tank1{
     padding:20px;
@@ -1080,7 +1065,7 @@ font-size: medium;
 .case{
     height:273px;
 }
-.corona{
+#corona{
     height:263px;
 }
 .tank1{
@@ -1105,7 +1090,7 @@ font-size: medium;
 .case{
     height:270px;
 }
-.corona{
+#corona{
     height:245px;
 }
 .west{
@@ -1131,7 +1116,7 @@ font-size: small;
 .case{
     height:229px;
 }
-.corona{
+#corona{
     height:230px;
 }
 .tank1{
@@ -1157,7 +1142,7 @@ font-size: small;
     height:229px;
 }
 .
-.corona{
+#corona{
     height:230px;
 }
 .west{
@@ -1177,7 +1162,7 @@ font-size: small;
 .case{
     height:200px;
 }
-.corona{
+#corona{
     height:230px;
 }
 .west{
@@ -1193,7 +1178,7 @@ font-size: small;
 }
 }
 @media (max-width: 645px) {
-.toy{
+#toy{
     background-image: none;
 }
 }
@@ -1206,7 +1191,11 @@ font-size: small;
 .star{
     font-weight: 600;
 }
-
+a{
+    text-decoration: none;
+    color:white;
+    cursor:pointer;
+}
 </style>
 <body>
     <div class="main23">
@@ -1214,10 +1203,10 @@ font-size: small;
        <nav>
         <div class="ylo "><b>Yourlogo</b></div>
         <div class="clock">
-        <div class="yl"><span class="star">Home</span></div>
-        <div class="yl"><span class="star">Menu</span></div>
-        <div class="yl"><span class="star">About us</span></div>
-        <div class="yl"><span class="star">Contact</span></div>
+        <div class="yl"><span class="star"><a href="#corona">Corona</a></span></div>
+        <div class="yl"><span class="star"><a href="#customersin">Customers</a></span></div>
+        <div class="yl"><span class="star"><a href="#toy">Subscribe</a></span></div>
+        <div class="yl"><span class="star"><a href="footer">Footer</a></span></div>
         </div>
         <div class="yl papua">Sign Up</div>
        </nav>
@@ -1257,8 +1246,6 @@ font-size: small;
         <button class="btn text-black "><b>See Menu</b></button><br>
 </div>
 
-
-
     <div class="lal">
         <button class="btn text-black glass"><b>Book a Table</b><img src="./right-arrow.png" class="camera" height="20px"/></button>
     </div>
@@ -1267,31 +1254,29 @@ font-size: small;
 
 <div class="ferrari">
 <main>
-    
-        <form method="post" action ="test.php" class="odi">
+     
+        <form onsubmit="allinone()" class="odi">
    
         
             <div class="apple">
                          <b>  Date</b><img src="./Arrow 3.png"class="la"/><br>
-                       <input type="date" class="rounded-input2" placeholder="DATE" LENGTH="30PX" />
+                       <input type="date" class="rounded-input2" placeholder="DATE" id="dateinput" LENGTH="30PX" />
                        </div>
                        <div class="apple">
                            <b>Time</b><img src="./Arrow 3.png" class="la"/><br>
-                       <input type="time" class="rounded-input2" placeholder="TIME" />
+                       <input type="time" class="rounded-input2" placeholder="TIME" id="timeinput" />
                        </div>
                        <div class="apple">
                            <b>Mail</b><img src="./Arrow 3.png" class="la"/><br>
-                       <input type="mail" c placeholder="MAIL" class="rounded-input2"/>
+                       <input type="email" c placeholder="MAIL" class="rounded-input2" id="mailinput"/>
                        </div>
-                       
                        <div class="apple1">
-                       <button class="watch">Check Availiblity</button>
+                       <button class="watch" type="submit"  id="sweetalert">Check Availiblity</button>
                        </div>
-                       
                     </form>
                 </div>
                 </div>
-       
+
 <!-- Delicious food categories-->
     <section>
         <div class="container1" >
@@ -1334,7 +1319,7 @@ font-size: small;
 
  <!--- Covid-19 -->
 <section>
-            <div class="corona">
+            <div id="corona">
             <div class="txt">
                 <center>
                <span class="coffee"><P class="maruti">COVID-19 Protocol</P></span>
@@ -1442,7 +1427,7 @@ ut labore et dolore magna.
 
 
         <section class="main">
-            <div>
+            <div id="customersin">
                 <div class="best1">
                <div class="best">
              <center>
@@ -1494,16 +1479,16 @@ ut labore et dolore magna.
                         <!--- subscribe to our   -->
 
             <section class="main">
-                <div class="toy">
+                <div id="toy">
                         <div class="subscribe">
                                <center>
                                 <p class="orange1">Subscribe</p>
                                 <p class="insane">To Our NewsLetter</p>
-                                <form method="post" onsubmit=" return validate()" action ="test.php" class="form">
+                                <form onsubmit="validate()" class="form" >
                              <div class="aston" >  <input type="text" id="name1" class="rounded-input " placeholder="NAME" required ></div>
                               <div class="aston"><input type="email" id="mail1" class="rounded-input " placeholder="MAIL" required></div>
                                <div class="aston"> <TEXTAREA CLASS="rounded-input1 " id="msg1" ROWS="8" COLS="78" placeholder="MESSAGE" ></TEXTAREA></div>
-                               <div class="aston"> <button class="btn rounded-pill text-black btn-lg bye "  style="background-color: #6bb99c;" onclick="validate()"> SEND MESSAGE</button></div>
+                               <div class="aston"> <button class="btn rounded-pill text-black btn-lg bye "  style="background-color: #6bb99c;" > SEND MESSAGE</button></div>
                                <div class="aston"><p id="outcome" style="color:red; font-size:35px; font-weight: 600;" ></p></div>
                             </form>
                  
@@ -1516,7 +1501,7 @@ ut labore et dolore magna.
 
 <!---footer -->
 
-<footer>
+<footer >
     <div class="csk">
     <div class="mobile">
         <ul type="none">
@@ -1559,9 +1544,118 @@ ut labore et dolore magna.
     </div>
 
 </footer>
- 
+
  </div>
 
 </div>
+
+<script>
+    function validate(){
+        var sun= document.getElementById("name1").value;
+        var moon= document.getElementById("mail1").value;
+        var night= document.getElementById("msg1").value;
+        event.preventDefault();
+        if(sun.length>=1 && moon.length>=1){
+         Swal.fire({
+                icon: 'success',
+                title: 'Form Successfully Submitted',
+                html: 'Name: ' +sun+ '<br>' +
+                      'Mail: ' +moon
+            });
+        }
+    }
+
+   
+
+
+   function validatetiming(){
+   var datefix = document.getElementById("dateinput").value;
+   var timefix = document.getElementById("timeinput").value;
+
+const combinedDateTimeStr1 = `${datefix}T${timefix}`;
+const combinedDateTime1 = new Date(combinedDateTimeStr1);
+const currentDateTime = new Date();
+const dayofweek= combinedDateTime1.getDay();
+    event.preventDefault()
+
+    if(combinedDateTime1 < currentDateTime){
+      Swal.fire({
+                icon: 'error',
+                title: 'Please select a future date',
+            });
+    }
+    else if(dayofweek >=5 && dayofweek<=7){
+        Swal.fire({
+                icon: 'error',
+                title: 'Please select a day from Monday to Friday',
+            });
+    }
+    else{
+        Swal.fire({
+                icon: 'success',
+                title: ' Your Slot is booked on ' +datefix+ ' at ' +timefix,
+            });
+    }
+   }
+
+
+    function allinone(){
+    var datefix = document.getElementById("dateinput").value;
+    var timefix=document.getElementById("timeinput").value;
+    const mailfix= document.getElementById("mailinput").value;
+        event.preventDefault();
+        // console.log(`${datefix} + ${timefix} + ${mailfix}`);
+        if((datefix=="") && (timefix=="") && (mailfix=="")){
+            Swal.fire({
+                icon: 'error',
+                title: 'Please insert all values',
+            });
+        } 
+
+
+        else if((datefix=="") && (timefix=="")){
+           Swal.fire({
+                icon: 'error',
+                title: 'Please enter date and time',
+            });
+        }else if((datefix=="") && (mailfix=="")){
+            Swal.fire({
+                icon: 'error',
+                title: 'Please enter date and mail',
+            });
+        }
+        else if((timefix=="") && (mailfix=="")){
+            Swal.fire({
+                icon: 'error',
+                title: 'Please enter time and mail',
+            });
+        }
+        else if(datefix==""){
+            Swal.fire({
+                icon: 'error',
+                title: 'Please enter date',
+            });
+        }
+        else if(timefix==""){
+            Swal.fire({
+                icon: 'error',
+                title: 'Please enter time',
+            });
+        }
+        else if(mailfix==""){
+            Swal.fire({
+                icon: 'error',
+                title: 'Please enter mail',
+            });
+
+        }
+        else{
+            validatetiming();
+        }
+}
+    
+
+
+    </script>
 </body>
 </html>
